@@ -1,4 +1,4 @@
-# foryou
+# for you
 A short poem that I wrote years ago for my kids when they were little and times were tough.
 
 To be both 
