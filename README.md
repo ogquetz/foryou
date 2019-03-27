@@ -7,3 +7,5 @@ Creative Commons license:
 http://creativecommons.org/licenses/by-nc-sa/4.0/
 
 Please share and have fun!
+
+Currently does not work in Chrome. Coming soon.
