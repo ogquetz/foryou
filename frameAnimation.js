@@ -207,7 +207,7 @@ function cleanupFamilyCaptions() {
   // display familyLine4 after familyLine3 ends
   anim = document.getElementById('familyLine4').firstElementChild;
   animBegin = document.getElementById('familyLine3').lastElementChild.id;
-  animBegin = animBegin + '.end+' + (durationStill * 2) + 's';
+  animBegin = animBegin + '.end+' + (durationStill * 1) + 's';
   anim.setAttribute('begin', animBegin);
 
   // keep familyLine4 until the end (no out animation)

@@ -1098,7 +1098,10 @@
       </g>
       <text id='caption-family' class='caption right final'>
         <tspan  x='10%' dy='-10%' id='familyLine1' class='line1'> </tspan>
-        <tspan  x='10%' dy='0'   id='familyLine2' class='line2'>I will be</tspan>
+        <!-- For some reason the second family line does not appear at the same
+            height as the second gift line. Changing to dy=1 to see if it lines up better.
+            Not happy with this hack. -->
+        <tspan  x='10%' dy='1'   id='familyLine2' class='line2'>I will be</tspan>
         <tspan  x='10%' dy='10'   id='familyLine3' class='line3'> </tspan>
         <tspan  x='10%' dy='20'   id='familyLine4' class='line4'>are my everything</tspan>
       </text>
