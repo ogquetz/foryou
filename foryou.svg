@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   sodipodi:docname="tangram-base-inkscape.svg"
+   viewBox="-80 -45 160 90"
+   x='100' y='100' width='800' height='450'>
+  <script xlink:href='frameAnimation.js' href='frameAnimation.js' />
+  <metadata
+     id="metadata907">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="790"
+     id="namedview905"
+     showgrid="false"
+     inkscape:zoom="6.3639513"
+     inkscape:cx="-17.482267"
+     inkscape:cy="9.7349356"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1831"
+     inkscape:snap-grids="false"
+     inkscape:snap-to-guides="false"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-midpoints="false"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-intersection-paths="false"
+     inkscape:object-paths="false"
+     inkscape:snap-smooth-nodes="false"
+     inkscape:bbox-paths="false"
+     inkscape:measure-start="0,0"
+     inkscape:measure-end="0,0"
+     inkscape:snap-nodes="false" />
+  <!-- <style id="blackOnWhite">
+    inkscape and gapplin do not support external CSS
+     @import url(blackOnWhite.css);
+  </style> -->
+  <style id="themeBlackOnWhite">
+    <![CDATA[
+    .background {
+      fill: #fffff0;
+    }
+
+    .screen {
+      background-color: gray;
+      width: 400px;
+      height: 400px;
+    }
+
+    .frame {
+      fill: none;
+      stroke: none;
+      stroke-width: 0.5pt;
+    }
+
+    .piece {
+      fill: black;
+      stroke: none;
+      stroke-width: 0.05pt;
+    }
+
+    .title tspan {
+      fill: black;
+      font: italic 6pt serif;
+    }
+
+    .caption tspan {
+      fill: black;
+      font: italic 6pt serif;
+      opacity: 0;
+    }
+
+    .left {
+      text-anchor: end;
+    }
+
+    .right {
+      text-anchor: start;
+    }
+
+    .triangle {}
+
+    .square {}
+
+    .parallelogram {}
+
+    .piece-path {
+      fill: none;
+      fill-opacity: 1;
+      fill-rule: nonzero;
+      stroke: #aaaaaa;
+      stroke-width: 0.05pt;
+      stroke-linecap: round;
+      stroke-linejoin: miter;
+      stroke-miterlimit: 1.60000002;
+      stroke-dasharray: 0.11338583, 0.34015748;
+      stroke-dashoffset: 0;
+      stroke-opacity: 0.5;
+      enable-background: accumulate;
+    }
+
+    .buttonBase {
+      fill: #ff0000;
+      stroke: #000000;
+      stroke-width: 0.5pt;
+    }
+
+    .buttonFront {
+      fill: #000000;
+      stroke: none;
+    }
+
+    ]]>
+  </style>
+
+  <defs id="tangramPieces">
+    <polygon id="tri-b-unit"
+       class="piece triangle large"
+       points="0,0 2,0 0,2 "/>
+    <polygon id="tri-h-unit"
+       class="piece triangle medium"
+       points="0,0 -2,2 -2,-2 " />
+    <polygon id="tri-h-half"
+       class="piece triangle small"
+       points="0,0 -1,1 -1,-1 " />
+    <polygon id="square"
+       class="piece square"
+       points="-1,-1 0,0 -1,1 -2,0 " />
+    <polygon id="parallelogram"
+       points="-3,1 -2,0 0,0 -1,1 "
+       class="piece parallelogram" />
+  </defs>
+  <defs id='ui'>
+    <g id='button'>
+      <circle cx='0' cy='0' r='5' class='buttonBase' />
+    </g>
+    <g id='buttonPlayDef'>
+      <use xlink:href='#button' link='#button' x='0' y='0'/>
+      <polygon points='-1,2 -1,-2 2,0' class='buttonFront'/>
+    </g>
+  </defs>
+  <g id='background'>
+    <rect class='background' x='-80' y='-45' width='100%' height='100%' />
+  </g>
+
+  <svg id='camera' x='-80' y='-45' width='160' height='90' viewBox='-80 -45 160 90'>
+    <g id="piecePaths"
+     inkscape:groupmode="layer"
+     inkscape:label="paths"
+     class="piece-path">
+      <g
+         inkscape:groupmode="layer"
+         id="layer4"
+         inkscape:label="parallelogram">
+        <path id="path-parallelogram"
+           d="m -32.317203,16.606602 c 5.981878,1.070933 14.707836,-4.277853 13.34664,-12.1092039 6.357616,-7.3030301 7.949947,-4.97504658 11.4205813,-2.6390336 0.5615046,0.3779372 1.8503167,0.1033198 2.2796128,-0.3661702 1.804786,-3.030212 5.31084571,-6.947974 4.29293975,-7.1687807 C -2.9576783,-6.1061468 -11.896659,0.37921819 -15.409868,0.77181411 -20.017191,1.2866757 -32.003536,-4.9377785 -38.062446,3.3483496 c 2.984785,-1.8311449 2.659097,-3.53716823 2.413396,-4.4922996 -0.329244,-1.2798939 -1.765105,-1.7115469 -6.854128,-4.0711017 -3.701709,-1.6049205 -11.474867,-1.4344778 -10.486684,-2.8680012 0.8596,-1.2469926 17.907537,-2.4884661 21.379766,-2.6223451 11.04449,0.7247897 21.9496608,2.7912636 27.8690162,3.3940263 20.8476468,2.1228971 25.1018518,12.7456801 24.5452738,4.1189836 0.68495,-11.1625959 0.573286,-19.3962239 -2.618539,-19.5611309 -1.622723,-0.08384 -4.245487,2.38393 -7.546121,6.656432 -9.76271396,5.57446 10.665187,15.43844038 10.16466,23.4229122 -0.316794,4.2908558 -1.925692,7.7797158 -9.015612,7.8665628 -13.8933956,-0.346054 -39.638834,-0.184285 -43.204941,-4.601463 -3.566107,-4.4171778 3.828301,-12.2790432 8.371032,-14.2581796 4.542732,-1.9791365 19.305774,-1.0433295 18.4365709,-6.6467024 0.8336483,3.4478758 3.2302528,8.0837428 6.0559017,11.1874328"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccscsscscscscsccczzcc" />
+      </g>
+      <g
+         inkscape:label="square"
+         id="g1805"
+         inkscape:groupmode="layer">
+        <path id="path-square"
+           sodipodi:nodetypes="cccscscsssssscscccsszcc"
+           inkscape:connector-curvature="0"
+           d="M -35.650541,18.606605 C -20.279952,14.477988 0.42611258,11.392866 9.8072586,16.164083 18.213508,21.338964 24.690527,9.2605209 20.840782,5.1588665 20.308065,-2.2114396 21.717004,-21.433489 18.048258,-23.33185 c -0.985072,-0.509716 -5.899805,5.111653 -8.6661873,7.680171 -0.8057731,0.729322 -1.9666617,3.752858 -1.9356007,5.463579 0.044779,2.4662446 14.751654,20.681147 13.165736,4.1493849 0.503604,3.1902157 -1.154947,8.5676053 -2.728015,6.90754359 C 13.332257,-3.9348367 7.2997679,-5.3744622 -1.1526081,-6.6898565 -20.834655,-9.7528593 -47.042509,-10.97639 -47.195436,-14.040109 c -0.255033,-5.109302 9.488957,2.673322 11.999545,2.847709 9.13643,0.634621 22.095807,0.476779 23.227402,2.7027349 1.377859,2.7103795 -2.871893,2.3615961 -5.352647,2.597731 -18.148263,1.7274742 -19.009632,9.6341116 -24.701675,12.7240375 2.324443,11.1123626 24.549465,3.1790586 36.1945754,2.3767854 3.525984,-0.242918 -3.600814,-7.9557413 -3.8378868,-10.525493 -11.7876546,4.1730045 -2.7364236,11.5332492 -9.8263436,11.6200962 -14.105954,1.552162 -19.865936,0.105963 -21.973442,-1.3338306 -1.024255,-1.7879336 0.859747,-2.9429529 2.389962,-4.6305424 4.512931,-4.97705957 7.387394,-3.35350732 6.87447,-2.1565724 -0.830111,1.9371093 -4.531242,2.8403068 -3.310491,0.2357472 1.220751,-2.60455965 30.809657,-27.0856618 30.624615,-17.7788198 0.3804086,7.7871825 3.6017892,13.5043821 5.5488222,14.3483808"
+           class="style-dotted-line" />
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="g1809"
+         inkscape:label="tri-h-half-1" >
+        <path id="path-tri-h-half-1"
+          class="style-dotted-line"
+           d="M -33.000047,17.888907 C -22.183303,16.605852 -34.494588,10.965341 -43.222285,6 c -6.803234,0.5019293 -10.126893,-5.34037639 -11.048184,-7.549432 -2.502524,-6.0005143 7.771633,-8.738589 17.270416,-10.00615 3.299721,0.571259 30.5253791,3.8501693 26.972841,4.3039559 -4.349993,0.5556503 -25.978443,7.70597169 -21.442954,16.9446884 0.866689,1.7654307 3.636162,2.7234697 13.35903,1.0847227 18.75097052,0.284809 22.0497781,6.750483 28.111154,12.11113 -1.1058485,-4.629637 2.148311,-9.259273 8.444458,-13.88891 6.548667,-7.6713266 3.581241,-11.5362161 1.555557,-15.7778022 1.046875,9.2575866 -2.939053,6.722437 -4.604353,5.93581523 C 12.009056,-2.4416888 6.9247159,-9.4967237 8.7127071,-16.019097 -8.8104217,-21.60956 -4.039643,-17.849176 -4.521938,-8.3881841 -4.8444787,-2.0610286 -24.804502,-10.52862 -19.556129,-3.1162051e-4 -18.299637,2.5202284 -18.43252,1.5523629 -12.309099,-0.34969703 c 4.5634519,-2.50075557 8.5755558,-4.88947737 8.9287913,-5.68660487 0.5542226,-1.2506843 -0.8685027,-1.8337114 -1.9611083,-3.8884428 -0.1015518,4.0003878 5.62538373,7.2474793 8.4525349,9.25806789"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccscssccccscsscscc" />
+      </g>
+      <g
+         inkscape:label="tri-h-half-2"
+         id="g1815"
+         inkscape:groupmode="layer">
+        <path id="path-tri-h-half-2"
+          class="style-dotted-line"
+           d="m -35.777829,17.111128 c 1.013001,-3.636595 -11.637156,-4.411531 -9.127497,-7.1967738 3.56734,-3.9590672 8.139229,-6.5159885 8.597322,-8.439281 0.213767,-0.89749842 -1.552735,-2.3431134 -0.366257,-2.19484977 4.228699,0.52842288 -5.405493,9.61068227 -5.436911,4.83088477 C -52.67786,7.9574011 -58.745,-2.4351044 -53.329003,-7.9410371 c 3.703642,-3.7651429 15.734751,-2.9973909 23.662294,-2.7256549 4.762972,0.218961 13.892431,-0.153253 15.494818,2.68668 1.323642,2.345909 -7.512542,1.8178667 -9.196623,5.7899836 -1.151369,2.71564622 4.883095,9.9259397 4.757378,12.3844784 1.47299,-15.0137475 -3.332318,-5.4064741 7.888901,-11.3333497 6.2905504,11.9507737 12.7045998,21.8933827 20.166697,21.2500327 6.669594,0.01193 12.098234,-1.89962 12.888908,-11.000017 1.49351,-12.7744759 0.755046,-18.0414055 -1.000001,-19.888919 -0.03185,-3.269378 1.064011,-10.824568 -1.589145,-12.014142 -1.342286,-0.601829 -6.759038,1.063315 -7.633091,4.458575 -3.3021245,4.959212 -11.68814504,-1.251271 -14.4342593,0.16074 -3.2772725,1.685124 -2.2662101,5.633956 -2.2324331,7.283715 0.033777,1.6497591 2.574703,6.6938735 5.0000076,8.4444577"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cssscscsscccccscszc" />
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="g1821"
+         inkscape:label="tri-h-unit-1" >
+        <path id="path-tri-h-unit-1"
+          class="style-dotted-line"
+           d="M -36.555608,20.555578 C -4.9646903,18.668943 12.402783,14.329991 18.222253,8.000003 -22.457001,27.638492 -50.522986,7.8596109 -44.444509,4.9999985 c 5.427739,3.0249097 10.541267,-6.5951863 7.833503,-5.94360452 -1.611182,0.38770605 -0.742808,1.58181877 -0.113273,1.59342664 6.450203,0.11893398 16.320214,4.34997788 22.522115,0.3282312 C -9.5160306,-2.060765 -5.4095967,-6.4520618 0.98546497,-6.8143449 9.4125129,-7.291741 16.614868,-1.7111805 18.049209,-0.18663871 19.570935,1.4307837 21.337071,-3.0357353 20.55559,-9.8889131 c -0.218452,8.2380714 3.496596,11.8063458 -6.193081,13.8682602 -9.7325289,2.0710331 -30.50301,7.6712379 -34.264906,6.7491439 3.196249,0.778742 17.4229474,4.696665 17.0108913,-12.0637982 -0.082152,-3.3415317 7.1045874,-4.8851272 11.7714449,-7.8830646 3.0423478,-1.9543702 5.4655748,-5.8821442 2.5510458,-6.6642892 -3.6974357,-0.01644 -3.8323411,8.7080748 -6.7746313,8.7537342 -4.62751019,0.071811 -9.4355679,0.8695192 -13.0648942,4.0132754 C -14.453493,2.1205423 2.5771872,17.182633 10.535537,19.386036 -19.482069,18.48151 -60.459643,2.6933255 -56.201201,-6.3824264 c 1.435079,-3.0584938 13.280589,-6.6720836 21.867818,-6.0620466 8.587229,0.610037 20.840181,1.493972 20.108813,-2.808976 -0.398581,-2.345014 -2.995791,-1.410437 -3.263134,0.06366 -0.267282,1.473754 1.794233,3.486775 10.709919,3.300877 2.4458672,-1.426333 4.8422728,7.2009888 9.4444588,13.2222422"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccssssscscsscsscszsscc" />
+      </g>
+      <g
+         inkscape:label="tri-h-unit-2"
+         id="g1827"
+         inkscape:groupmode="layer">
+        <path id="path-tri-h-unit-2"
+           sodipodi:nodetypes="cccssscscscssccssscc"
+           inkscape:connector-curvature="0"
+           d="M -33.777826,19.88891 C -2.1869083,18.002275 16.736123,14.441102 22.555593,8.1111143 -18.123661,27.749603 -48.411871,9.2485015 -40.555614,5.3333323 c 7.37856,-3.533806 1.7198,-7.9483369 1.136619,-5.92666806 -0.801707,2.77921426 8.560342,-0.97564504 27.082729,0.0658982 3.0183026,0.16972395 18.9832302,-11.71239244 22.842874,-16.02176744 13.743958,-15.345427 10.324627,6.773426 10.382316,8.9936288 0.171507,4.7947053 1.505132,9.9427804 -6.80241,12.3573456 C 3.0815326,8.0003383 -13.26901,6.188533 -19.111138,6.7777794 -18.250248,1.6407373 -5.2876014,-5.9172118 6.6886777,-7.1364096 11.29068,-7.6048983 10.923683,-13.448796 13.444468,-15.555588 9.6385322,-7.8948987 8.9807607,-8.2382263 3.9634828,-7.8340023 -5.4392761,-7.0764557 -12.070454,-2.6302813 -8.6666768,1.4444375 -3.0369936,8.1838248 4.0216338,19.071525 11.979984,21.274928 -22.07068,18.845349 -94.617607,-10.55771 -34.222272,-10.111136 c 4.641182,-0.516595 20.72907,-0.839365 19.997702,-5.142313 -0.398581,-2.345014 -2.99579,-1.410437 -3.263134,0.06366 -0.193462,1.066719 2.426092,3.01645 7.5142163,3.48126 1.9415102,0.177361 4.4832909,0.0098 6.6401524,-0.541495 -3.753072,3.4814868 3.38011725,12.76853813 7.3333444,15.472246"
+           class="style-dotted-line" />
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="g1831"
+         inkscape:label="tri-b-unit" >
+        <path id="path-tri-b-unit"
+          class="style-dotted-line"
+           d="m -32.555602,19.333354 c 9.094154,5.101981 56.273825,10.970095 64.544368,-0.855066 C 35.749514,13.101199 19.067031,7.9226171 20.524187,-8.0481415 21.739708,-21.370524 17.564953,-25.291835 11.00002,-19.000038 c 1.254667,-0.989765 4.197309,-4.190723 7.527016,-3.15476 6.680851,2.078595 27.169214,9.969279 24.039246,21.0526574 C 39.436313,9.9812375 15.840451,22.256435 11.222242,22.222247 -8.1330465,17.468298 -28.625775,13.921215 -30.721285,9.4630953 c -1.597298,-3.3981929 0.06649,-7.7012044 1.880928,-8.4397941 2.844164,-1.15775074 13.953384,-0.23568445 16.773338,-1.36126975 C -4.7901916,-2.6736098 14.092653,-20.309641 16.84887,-21.432455 c 4.098955,-1.669812 4.04386,7.441968 3.928942,9.210205 0.234804,6.020719 1.740684,14.3454342 -2.725229,15.7293797 C 6.4574527,7.1003553 -8.4468556,8.5450664 -18.271708,10.77318 -26.083402,12.636886 -40.598452,9.4100273 -42.111172,8.333337 -61.326482,15.640211 31.273206,17.840724 19.6667,7.2222241 17.511415,4.3141825 -0.68952041,8.0457293 -5.659125,5.2520668 -7.721152,4.0928987 5.6871507,7.4390829 12.399202,6.2234913 15.754396,5.6158462 22.509463,1.9167067 21.002493,-1.3349453 19.856241,-3.8082592 13.929884,-6.0226737 -1.9086792,-6.4207755 -9.1326575,-6.60235 -31.778533,-11.88191 -37.333387,-12.333361 c -8.931539,-0.412339 -13.184708,0.612519 -13.363703,2.225023 -0.345374,3.1113399 17.477404,10.35493321 40.128041,9.79463688 -5.005155,0.61902142 -8.027156,2.10981752 -8.330772,1.15259587 -1.496751,-4.71884925 -2.453839,-7.56187625 12.6721674,-7.06588905 3.6885908,0.1209502 1.4822403,-5.6252037 1.5609829,-7.7730357 0.5979718,-3.460751 1.4987726,-4.833267 2.5119686,-4.915532 6.6376245,-0.538935 8.2315373,0.933173 11.4521101,3.417971 -0.7288339,7.6576092 -10.3492179,8.6477029 -10.9711233,10.7153847 -0.7678836,2.5530231 3.650623,6.9626102 5.6737244,9.6710935"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="csscszcsscscscccsssscscsscscsc" />
+      </g>
+    </g>
+    <g id="pony"
+       inkscape:label="pony"
+       inkscape:groupmode="layer"
+       sodipodi:insensitive="true">
+      <use
+         id="use968"
+         y="2"
+         x="2"
+         href="#tri-h-unit"
+         xlink:href="#tri-h-unit"
+         width="100%"
+         height="100%"
+         transform="matrix(0.86602541,0.5,0.5,-0.86602541,-35.626671,20.953089)" />
+      <use
+         id="use970"
+         transform="matrix(-0.86602541,-0.5,-0.5,0.86602541,-34.626671,19.221038)"
+         y="2"
+         x="2"
+         href="#tri-h-unit"
+         xlink:href="#tri-h-unit"
+         width="100%"
+         height="100%" />
+      <use
+         id="use972"
+         transform="rotate(-15,55.171608,135.7897)"
+         href="#tri-b-unit"
+         xlink:href="#tri-b-unit"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <use
+         id="use974"
+         transform="matrix(-0.86602541,-0.5,-0.5,0.86602541,-33.631058,17.540359)"
+         href="#tri-h-half"
+         xlink:href="#tri-h-half"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <use
+         id="use976"
+         transform="matrix(0.50000001,0.86602541,0.86602541,-0.50000001,-35.272205,17.912269)"
+         href="#tri-h-half"
+         xlink:href="#tri-h-half"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <use
+         id="use978"
+         y="2"
+         x="4"
+         href="#square"
+         xlink:href="#square"
+         width="100%"
+         height="100%"
+         transform="matrix(-0.86602541,-0.5,-0.5,0.86602541,-31.89462,18.488987)" />
+      <use
+         id="use980"
+         y="3"
+         x="3"
+         href="#parallelogram"
+         xlink:href="#parallelogram"
+         width="100%"
+         height="100%"
+         transform="rotate(-15,34.669765,138.65689)" />
+      <rect id="frame-pony"
+        class="frame"
+         inkscape:label="#frame-pony"
+         y="12.717958"
+         x="-40.862652"
+         height="12.46172"
+         width="22.098795"/>
+     <text id='caption-pony' class='caption right'>
+       <tspan >a pony</tspan>
+     </text>
+    </g>
+    <g id="castle"
+       inkscape:label="castle"
+       inkscape:groupmode="layer"
+       sodipodi:insensitive="true">
+      <use
+         transform="matrix(-1,0,0,1,-18.388349,5.099597)"
+         id="use1122"
+         y="2"
+         x="2"
+         href="#tri-h-unit"
+         xlink:href="#tri-h-unit"
+         width="100%"
+         height="100%" />
+      <use
+         id="use1124"
+         transform="rotate(135,-10.831967,1.3397241)"
+         y="2"
+         x="2"
+         href="#tri-h-unit"
+         xlink:href="#tri-h-unit"
+         width="100%"
+         height="100%" />
+      <use
+         id="use1126"
+         transform="matrix(-0.70710678,-0.70710678,-0.70710678,0.70710678,-17.621228,2.3595299)"
+         href="#tri-b-unit"
+         xlink:href="#tri-b-unit"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <use
+         id="use1128"
+         transform="rotate(45,-22.485483,-15.497165)"
+         href="#tri-h-half"
+         xlink:href="#tri-h-half"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <use
+         id="use1130"
+         transform="rotate(-135,-7.4191359,8.8995783)"
+         href="#tri-h-half"
+         xlink:href="#tri-h-half"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <use
+         transform="rotate(45,-18.778376,-21.032699)"
+         id="use1132"
+         y="2"
+         x="4"
+         href="#square"
+         xlink:href="#square"
+         width="100%"
+         height="100%" />
+      <use
+         transform="matrix(0,1,1,0,-22.388349,3.099597)"
+         id="use1134"
+         y="3"
+         x="3"
+         href="#parallelogram"
+         xlink:href="#parallelogram"
+         width="100%"
+         height="100%" />
+      <rect id="frame-castle"
+        class="frame"
+         width="21.48"
+         height="12.11"
+         x="-32.33"
+         y="-0.17"
+         inkscape:label="#frame-castle" />
+       <text id='caption-castle' class='caption left'><tspan  x='-10%'>a castle</tspan></text>
+    </g>
+    <g id="dragon"
+       inkscape:label="dragon"
+       inkscape:groupmode="layer"
+       sodipodi:insensitive="true">
+      <g
+         id="g1111"
+         transform="rotate(180,-5.4472974,0.26961202)">
+        <use
+           height="100%"
+           width="100%"
+           y="0"
+           x="0"
+           xlink:href="#tri-b-unit"
+           href="#tri-b-unit"
+           transform="rotate(-90,-0.0490188,1.297796)"
+           id="use940" />
+        <use
+           height="100%"
+           width="100%"
+           y="0"
+           x="0"
+           xlink:href="#tri-h-half"
+           href="#tri-h-half"
+           transform="rotate(-135,-0.12188395,0.78200272)"
+           id="use942" />
+        <use
+           transform="rotate(-45,0.71267968,7.3714582)"
+           height="100%"
+           width="100%"
+           xlink:href="#square"
+           href="#square"
+           x="4"
+           y="2"
+           id="use946" />
+        <use
+           transform="rotate(-45,-3.9944271,4.2501379)"
+           height="100%"
+           width="100%"
+           xlink:href="#tri-h-unit"
+           href="#tri-h-unit"
+           x="2"
+           y="2"
+           id="use936" />
+        <use
+           height="100%"
+           width="100%"
+           xlink:href="#tri-h-unit"
+           href="#tri-h-unit"
+           x="2"
+           y="2"
+           transform="rotate(-135,-0.65741784,3.4891095)"
+           id="use938" />
+      </g>
+      <use
+         id="use944"
+         transform="rotate(-90,-6.5767905,5.3729599)"
+         href="#tri-h-half"
+         xlink:href="#tri-h-half"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <use
+         id="use948"
+         y="3"
+         x="3"
+         href="#parallelogram"
+         xlink:href="#parallelogram"
+         width="100%"
+         height="100%"
+         transform="matrix(-0.70710678,0.70710678,0.70710678,0.70710678,-6.7193527,-2.1237668)" />
+      <rect id="frame-dragon"
+        class="frame"
+         width="28.88"
+         height="16.44"
+         x="-29.44"
+         y="-5.377"
+         inkscape:label="#frame-dragon" />
+         <text id='caption-dragon' class='caption right'><tspan  x='10%' y='10%'>a dragon</tspan></text>
+    </g>
+    <g id="genie"
+       inkscape:groupmode="layer"
+       inkscape:label="genie"
+       sodipodi:insensitive="true">
+      <use
+         height="100%"
+         width="100%"
+         xlink:href="#tri-h-unit"
+         href="#tri-h-unit"
+         x="2"
+         y="2"
+         id="use1138"
+         transform="matrix(0,-1,-1,0,-41.963768,5.6297781)" />
+      <use
+         height="100%"
+         width="100%"
+         xlink:href="#tri-h-unit"
+         href="#tri-h-unit"
+         x="2"
+         y="2"
+         transform="rotate(90,-21.80915,-17.184082)"
+         id="use1140" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         xlink:href="#tri-b-unit"
+         href="#tri-b-unit"
+         transform="matrix(-0.70710678,0.70710678,0.70710678,0.70710678,-42.006452,7.5576807)"
+         id="use1142" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         xlink:href="#tri-h-half"
+         href="#tri-h-half"
+         transform="rotate(-90,-19.184082,22.80915)"
+         id="use1144" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         xlink:href="#tri-h-half"
+         href="#tri-h-half"
+         transform="rotate(90,-24.796773,-18.166995)"
+         id="use1146" />
+      <use
+         height="100%"
+         width="100%"
+         xlink:href="#square"
+         href="#square"
+         x="4"
+         y="2"
+         id="use1148"
+         transform="translate(-44.985111,4.6199215)" />
+      <use
+         height="100%"
+         width="100%"
+         xlink:href="#parallelogram"
+         href="#parallelogram"
+         x="3"
+         y="3"
+         id="use1150"
+         transform="rotate(150,-18.152198,-1.8493822)" />
+      <rect id="frame-genie"
+        class="frame"
+         inkscape:label="#frame-genie"
+         y="-1.8266847"
+         x="-48.01194"
+         height="12.692062"
+         width="22.504606"/>
+         <text id='caption-genie' class='caption right'><tspan  x='10%' >a genie</tspan></text>
+    </g>
+
+    <g id="spaceship"
+       inkscape:groupmode="layer"
+       inkscape:label="spaceship"
+       sodipodi:insensitive="true">
+      <use
+         height="100%"
+         width="100%"
+         xlink:href="#tri-h-unit"
+         href="#tri-h-unit"
+         x="2"
+         y="2"
+         id="use1032"
+         transform="rotate(-90,-3.4163473,-12.995992)" />
+      <use
+         height="100%"
+         width="100%"
+         xlink:href="#tri-h-unit"
+         href="#tri-h-unit"
+         x="2"
+         y="2"
+         transform="rotate(90,15.995992,-0.4163473)"
+         id="use1034" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         xlink:href="#tri-b-unit"
+         href="#tri-b-unit"
+         transform="translate(10.587609,-19.357803)"
+         id="use1036" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         xlink:href="#tri-h-half"
+         href="#tri-h-half"
+         transform="matrix(-1,0,0,1,11.587609,-18.357803)"
+         id="use1038" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         xlink:href="#tri-h-half"
+         href="#tri-h-half"
+         transform="matrix(0,1,1,0,8.5796447,-15.412339)"
+         id="use1040" />
+      <use
+         height="100%"
+         width="100%"
+         xlink:href="#square"
+         href="#square"
+         x="4"
+         y="2"
+         id="use1042"
+         transform="translate(6.5796447,-17.412339)" />
+      <use
+         height="100%"
+         width="100%"
+         xlink:href="#parallelogram"
+         href="#parallelogram"
+         x="3"
+         y="3"
+         id="use1044"
+         transform="matrix(-1,0,0,1,12.579645,-19.412339)" />
+      <rect id="frame-spaceship"
+        class="frame"
+         width="22.49469"
+         height="12.686433"
+         x="-2.7992439"
+         y="-23.440002"
+         inkscape:label="#frame-spaceship" />
+       <text id='caption-spaceship' class='caption left'><tspan  x='-10%' >a spaceship</tspan></text>
+    </g>
+    <g id="rocket"
+       inkscape:label="rocket"
+       inkscape:groupmode="layer"
+       sodipodi:insensitive="true">
+      <use
+         id="use1000"
+         y="2"
+         x="2"
+         href="#tri-h-unit"
+         xlink:href="#tri-h-unit"
+         width="100%"
+         height="100%"
+         transform="matrix(-1,0,0,1,21.794475,-9.732525)" />
+      <use
+         id="use1002"
+         transform="translate(19.794475,-11.732525)"
+         y="2"
+         x="2"
+         href="#tri-h-unit"
+         xlink:href="#tri-h-unit"
+         width="100%"
+         height="100%" />
+      <use
+         id="use1004"
+         transform="rotate(45,26.266754,18.527781)"
+         href="#tri-b-unit"
+         xlink:href="#tri-b-unit"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <use
+         id="use1006"
+         transform="rotate(180,10.397237,-5.3662625)"
+         href="#tri-h-half"
+         xlink:href="#tri-h-half"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <use
+         id="use1008"
+         transform="translate(20.794475,-6.732525)"
+         href="#tri-h-half"
+         xlink:href="#tri-h-half"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <use
+         id="use1010"
+         y="2"
+         x="4"
+         href="#square"
+         xlink:href="#square"
+         width="100%"
+         height="100%"
+         transform="rotate(90,15.7635,7.0309745)" />
+      <use
+         id="use1012"
+         y="3"
+         x="3"
+         href="#parallelogram"
+         xlink:href="#parallelogram"
+         width="100%"
+         height="100%"
+         transform="rotate(105,13.725543,7.6071771)" />
+      <rect id="frame-rocket"
+        class="frame"
+         inkscape:label="#frame-rocket"
+         y="-13.815003"
+         x="12.861744"
+         height="12.686433"
+         width="22.49469"/>
+         <text id='caption-rocket' class='caption right'><tspan  x='10%' >a rocket</tspan></text>
+    </g>
+    <g id="airplane"
+       inkscape:groupmode="layer"
+       inkscape:label="airplane"
+       sodipodi:insensitive="true">
+      <use
+         height="100%"
+         width="100%"
+         xlink:href="#tri-h-unit"
+         href="#tri-h-unit"
+         x="2"
+         y="2"
+         id="use984"
+         transform="rotate(-135,-19.081846,3.0137971)" />
+      <use
+         height="100%"
+         width="100%"
+         xlink:href="#tri-h-unit"
+         href="#tri-h-unit"
+         x="2"
+         y="2"
+         transform="matrix(-0.70710678,0.70710678,0.70710678,0.70710678,-34.705824,-14.004883)"
+         id="use986" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         xlink:href="#tri-b-unit"
+         href="#tri-b-unit"
+         transform="rotate(-90,-24.575331,12.966893)"
+         id="use988" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         xlink:href="#tri-h-half"
+         href="#tri-h-half"
+         transform="rotate(-90,-20.536232,9.3401707)"
+         id="use990" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         xlink:href="#tri-h-half"
+         href="#tri-h-half"
+         transform="rotate(-45,-32.07663,37.806148)"
+         id="use992" />
+      <use
+         height="100%"
+         width="100%"
+         xlink:href="#square"
+         href="#square"
+         x="4"
+         y="2"
+         id="use994"
+         transform="rotate(45,-0.63716747,-50.8288)" />
+      <use
+         height="100%"
+         width="100%"
+         xlink:href="#parallelogram"
+         href="#parallelogram"
+         x="3"
+         y="3"
+         id="use996"
+         transform="translate(-32.86269,-14.196062)" />
+      <rect id="frame-airplane"
+        class="frame"
+         width="18.782379"
+         height="10.579299"
+         x="-38.233765"
+         y="-16.330931"
+         inkscape:label="#frame-airplane" />
+         <text id='caption-airplane' class='caption right'><tspan  x='10%' >an airplane</tspan></text>
+    </g>
+    <g id="car"
+       inkscape:groupmode="layer"
+       inkscape:label="car"
+       sodipodi:insensitive="true">
+      <use
+         height="100%"
+         width="100%"
+         xlink:href="#tri-h-unit"
+         href="#tri-h-unit"
+         x="2"
+         y="2"
+         id="use1016"
+         transform="rotate(-90,12.617938,-3.7784819)" />
+      <use
+         height="100%"
+         width="100%"
+         xlink:href="#tri-h-unit"
+         href="#tri-h-unit"
+         x="2"
+         y="2"
+         transform="rotate(-90,14.617938,-5.7784819)"
+         id="use1018" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         xlink:href="#tri-b-unit"
+         href="#tri-b-unit"
+         transform="matrix(-1,0,0,1,20.39642,6.8394561)"
+         id="use1020" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         xlink:href="#tri-h-half"
+         href="#tri-h-half"
+         transform="rotate(90,4.2784819,14.117938)"
+         id="use1022" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         xlink:href="#tri-h-half"
+         href="#tri-h-half"
+         transform="matrix(0,1,1,0,22.39642,9.8394561)"
+         id="use1024" />
+      <use
+         height="100%"
+         width="100%"
+         xlink:href="#square"
+         href="#square"
+         x="4"
+         y="2"
+         id="use1026"
+         transform="translate(18.02142,3.2769561)" />
+      <use
+         height="100%"
+         width="100%"
+         xlink:href="#parallelogram"
+         href="#parallelogram"
+         x="3"
+         y="3"
+         id="use1028"
+         transform="matrix(0,-1,-1,0,24.39642,8.8394561)" />
+      <rect id="frame-car"
+        class="frame"
+         inkscape:label="#frame-car"
+         y="0.2961334"
+         x="3.6868072"
+         height="12.686433"
+         width="22.49469" />
+     <text id='caption-car' class='caption left'><tspan  x='-10%' >a car</tspan></text>
+    </g>
+    <g id="bunny"
+       inkscape:label="bunny"
+       inkscape:groupmode="layer"
+       sodipodi:insensitive="true">
+      <use
+         id="use1048"
+         y="2"
+         x="2"
+         href="#tri-h-unit"
+         xlink:href="#tri-h-unit"
+         width="100%"
+         height="100%"
+         transform="matrix(-0.70710678,0.70710678,0.70710678,0.70710678,9.799465,17.506115)" />
+      <use
+         id="use1050"
+         transform="rotate(-45,29.445696,-1.6617297)"
+         y="2"
+         x="2"
+         href="#tri-h-unit"
+         xlink:href="#tri-h-unit"
+         width="100%"
+         height="100%" />
+      <use
+         id="use1052"
+         transform="rotate(-90,16.89543,6.2675386)"
+         href="#tri-b-unit"
+         xlink:href="#tri-b-unit"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <use
+         id="use1054"
+         transform="rotate(180,4.3997325,10.167271)"
+         href="#tri-h-half"
+         xlink:href="#tri-h-half"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <use
+         id="use1056"
+         transform="rotate(45,-22.646231,24.410484)"
+         href="#tri-h-half"
+         xlink:href="#tri-h-half"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <use
+         id="use1058"
+         y="2"
+         x="4"
+         href="#square"
+         xlink:href="#square"
+         width="100%"
+         height="100%"
+         transform="translate(6.8055229,14.312872)" />
+      <use
+         id="use1060"
+         y="3"
+         x="3"
+         href="#parallelogram"
+         xlink:href="#parallelogram"
+         width="100%"
+         height="100%"
+         transform="translate(10.174688,11.782543)" />
+      <rect id="frame-bunny"
+        class="frame"
+         width="22.49469"
+         height="12.686433"
+         x="3.093215"
+         y="12.75889"
+         inkscape:label="#frame-bunny" />
+       <text id='caption-bunny' class='caption right'><tspan  x='10%' >a toy</tspan></text>
+    </g>
+    <g id="gift"
+       inkscape:groupmode="layer"
+       inkscape:label="gift"
+       sodipodi:insensitive="true">
+      <use
+         height="100%"
+         width="100%"
+         xlink:href="#tri-h-unit"
+         href="#tri-h-unit"
+         x="2"
+         y="2"
+         id="use1064"
+         transform="rotate(-180,-1.109835,-5.06204)" />
+      <use
+         height="100%"
+         width="100%"
+         xlink:href="#tri-h-unit"
+         href="#tri-h-unit"
+         x="2"
+         y="2"
+         transform="matrix(1,0,0,-1,-7.25092,-10.12408)"
+         id="use1066" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         xlink:href="#tri-b-unit"
+         href="#tri-b-unit"
+         transform="rotate(-135,-4.9869635,-5.3979053)"
+         id="use1068" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         xlink:href="#tri-h-half"
+         href="#tri-h-half"
+         transform="matrix(0,-1,-1,0,-3.6884201,-10.49908)"
+         id="use1070" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         xlink:href="#tri-h-half"
+         href="#tri-h-half"
+         transform="rotate(-90,-8.09375,-3.40533)"
+         id="use1072" />
+      <use
+         height="100%"
+         width="100%"
+         xlink:href="#square"
+         href="#square"
+         x="4"
+         y="2"
+         id="use1074"
+         transform="rotate(-90,-9.4258569,-2.7294731)" />
+      <use
+         height="100%"
+         width="100%"
+         xlink:href="#parallelogram"
+         href="#parallelogram"
+         x="3"
+         y="3"
+         id="use1076"
+         transform="translate(-6.6884202,-13.49908)" />
+      <rect id="frame-gift"
+        class="frame"
+         inkscape:label="#frame-gift"
+         y="-17.190186"
+         x="-10.430202"
+         height="9.2247133"
+         width="16.395895" />
+      <text id='caption-gift' class='caption right final'>
+        <tspan  x='10%' y='-10%' id='giftLine1' class='line1'>all these things</tspan>
+        <tspan  x='10%' dy='10'  id='giftLine2' class='line2'>I cannot buy</tspan>
+        <tspan  x='10%' dy='10'  id='giftLine3' class='line3'>for you</tspan>
+      </text>
+    </g>
+    <g id='finale'>
+      <g id="family"
+         inkscape:label="family"
+         inkscape:groupmode="layer"
+         sodipodi:insensitive="true">
+        <use
+           id="use1080"
+           y="2"
+           x="2"
+           href="#tri-h-unit"
+           xlink:href="#tri-h-unit"
+           width="100%"
+           height="100%"
+           transform="rotate(-45,3.5167683,-1.4155471)" />
+        <use
+           id="use1082"
+           transform="rotate(-90,1.4824467,0.60614582)"
+           y="2"
+           x="2"
+           href="#tri-h-unit"
+           xlink:href="#tri-h-unit"
+           width="100%"
+           height="100%" />
+        <use
+           id="use1084"
+           transform="matrix(-0.70710678,-0.70710678,-0.70710678,0.70710678,4.8485726,4.8840876)"
+           href="#tri-b-unit"
+           xlink:href="#tri-b-unit"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <use
+           id="use1086"
+           transform="rotate(60,2.0975883,-0.20668908)"
+           href="#tri-h-half"
+           xlink:href="#tri-h-half"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <use
+           id="use1088"
+           transform="rotate(120,1.4108967,0.84400139)"
+           href="#tri-h-half"
+           xlink:href="#tri-h-half"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <use
+           id="use1090"
+           y="2"
+           x="4"
+           href="#square"
+           xlink:href="#square"
+           width="100%"
+           height="100%"
+           transform="translate(-2.112437,-2.9274463)" />
+        <use
+           id="use1092"
+           y="3"
+           x="3"
+           href="#parallelogram"
+           xlink:href="#parallelogram"
+           width="100%"
+           height="100%"
+           transform="matrix(0,1,1,0,-2.1236991,-0.91140746)" />
+        <rect id="frame-family"
+          class="frame"
+           width="19.401098"
+           height="10.930489"
+           x="-4.2332582"
+           y="-3.8737876"
+           inkscape:label="#frame-family" />
+      </g>
+      <text id='caption-family' class='caption right final'>
+        <tspan  x='10%' dy='-10%' id='familyLine1' class='line1'> </tspan>
+        <tspan  x='10%' dy='0'   id='familyLine2' class='line2'>I will be</tspan>
+        <tspan  x='10%' dy='10'   id='familyLine3' class='line3'> </tspan>
+        <tspan  x='10%' dy='20'   id='familyLine4' class='line4'>are my everything</tspan>
+      </text>
+    </g>
+  </svg>
+  <g id='captions'/>
+  <g id='menu'>
+    <text id='title' class='title'>
+      <tspan  x='10%' dy='0' id='familyLine2' class='line2'>for you</tspan>
+    </text>
+    <use id='buttonPlay' xlink:href='#buttonPlayDef' href='#buttonPlayDef' x='-15%' y='0' />
+  </g>
+</svg>
