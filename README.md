@@ -1,10 +1,9 @@
 # for you
-A short poem that I wrote years ago for my kids when they were little and times were tough.
+A short poem that I wrote years ago for my kids when they were little and times were tough. 
 
-To be both read aloud and recoded with kids. 
+To be both read aloud and recoded with kids. Uses SVG, JS, and CSS. 
 
-SVG and JS and CSS. 
-
-Creative Commons license. Please have fun and share.
-
+Creative Commons license:
 http://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Please share and have fun!
